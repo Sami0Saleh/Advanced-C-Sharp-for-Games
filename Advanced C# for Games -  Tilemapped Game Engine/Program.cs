@@ -1,2 +1,10 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿namespace Advanced_C__for_Games____Tilemapped_Game_Engine
+{
+    class program
+    {
+        static void Main(string[] args)
+        {
+
+        }
+    }
+}
