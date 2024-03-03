@@ -6,50 +6,26 @@
         private string _name;
         private int[,] _tileLocation;
 
-
-
-
-
         public void MoveToTile(int[,] targetTile, int[,] currentTile)
         {
             bool canMove = false;
             // set canMove by checking targetTile and currentTile
             if (true)
             { canMove = true; }
-            else break;
+            else return;
 
             if (canMove) { _tileLocation = targetTile; }
-            else break;
+            else return;
         }
-
         public void CheckTile(int[,] targetTile)
         {
             if (/* check if targetTile has another object on it*/true )
 
-                    switch (/*types of tiles*/ true)
+                    switch (/*types of _tiles*/ true)
                 {
                     default: break;
                 }
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         public TileObject(string name, char avatar, int[,] tileLocation)
         {
             this._avatar = avatar;

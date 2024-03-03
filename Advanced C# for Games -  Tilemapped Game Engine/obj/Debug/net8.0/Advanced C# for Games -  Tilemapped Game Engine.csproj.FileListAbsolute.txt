@@ -1,0 +1,15 @@
+C:\Users\samis\OneDrive\Desktop\Advanced-C-Sharp-for-Games\Advanced C# for Games -  Tilemapped Game Engine\obj\Debug\net8.0\Advanced C# for Games -  Tilemapped Game Engine.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\samis\OneDrive\Desktop\Advanced-C-Sharp-for-Games\Advanced C# for Games -  Tilemapped Game Engine\obj\Debug\net8.0\Advanced C# for Games -  Tilemapped Game Engine.AssemblyInfoInputs.cache
+C:\Users\samis\OneDrive\Desktop\Advanced-C-Sharp-for-Games\Advanced C# for Games -  Tilemapped Game Engine\obj\Debug\net8.0\Advanced C# for Games -  Tilemapped Game Engine.AssemblyInfo.cs
+C:\Users\samis\OneDrive\Desktop\Advanced-C-Sharp-for-Games\Advanced C# for Games -  Tilemapped Game Engine\obj\Debug\net8.0\Advanced C# for Games -  Tilemapped Game Engine.csproj.CoreCompileInputs.cache
+C:\Users\samis\OneDrive\Desktop\Advanced-C-Sharp-for-Games\Advanced C# for Games -  Tilemapped Game Engine\obj\Debug\net8.0\Advanced C# for Games -  Tilemapped Game Engine.sourcelink.json
+C:\Users\samis\OneDrive\Desktop\Advanced-C-Sharp-for-Games\Advanced C# for Games -  Tilemapped Game Engine\bin\Debug\net8.0\Advanced C# for Games -  Tilemapped Game Engine.exe
+C:\Users\samis\OneDrive\Desktop\Advanced-C-Sharp-for-Games\Advanced C# for Games -  Tilemapped Game Engine\bin\Debug\net8.0\Advanced C# for Games -  Tilemapped Game Engine.deps.json
+C:\Users\samis\OneDrive\Desktop\Advanced-C-Sharp-for-Games\Advanced C# for Games -  Tilemapped Game Engine\bin\Debug\net8.0\Advanced C# for Games -  Tilemapped Game Engine.runtimeconfig.json
+C:\Users\samis\OneDrive\Desktop\Advanced-C-Sharp-for-Games\Advanced C# for Games -  Tilemapped Game Engine\bin\Debug\net8.0\Advanced C# for Games -  Tilemapped Game Engine.dll
+C:\Users\samis\OneDrive\Desktop\Advanced-C-Sharp-for-Games\Advanced C# for Games -  Tilemapped Game Engine\bin\Debug\net8.0\Advanced C# for Games -  Tilemapped Game Engine.pdb
+C:\Users\samis\OneDrive\Desktop\Advanced-C-Sharp-for-Games\Advanced C# for Games -  Tilemapped Game Engine\obj\Debug\net8.0\Advanced C# for Games -  Tilemapped Game Engine.dll
+C:\Users\samis\OneDrive\Desktop\Advanced-C-Sharp-for-Games\Advanced C# for Games -  Tilemapped Game Engine\obj\Debug\net8.0\refint\Advanced C# for Games -  Tilemapped Game Engine.dll
+C:\Users\samis\OneDrive\Desktop\Advanced-C-Sharp-for-Games\Advanced C# for Games -  Tilemapped Game Engine\obj\Debug\net8.0\Advanced C# for Games -  Tilemapped Game Engine.pdb
+C:\Users\samis\OneDrive\Desktop\Advanced-C-Sharp-for-Games\Advanced C# for Games -  Tilemapped Game Engine\obj\Debug\net8.0\Advanced C# for Games -  Tilemapped Game Engine.genruntimeconfig.cache
+C:\Users\samis\OneDrive\Desktop\Advanced-C-Sharp-for-Games\Advanced C# for Games -  Tilemapped Game Engine\obj\Debug\net8.0\ref\Advanced C# for Games -  Tilemapped Game Engine.dll
