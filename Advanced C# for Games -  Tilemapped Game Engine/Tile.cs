@@ -8,17 +8,17 @@ namespace Advanced_C__for_Games____Tilemapped_Game_Engine
 {
     internal class Tile
     {
-        private int _tileValue;
+        private string _tileValue;
 
         
-        public int TileValue
+        public string TileValue
         {
             get { return _tileValue; }
             set { _tileValue = value; }
         }
 
         
-        public Tile(int initialValue)
+        public Tile(string initialValue)
         {
             _tileValue = initialValue;
         }
@@ -26,7 +26,7 @@ namespace Advanced_C__for_Games____Tilemapped_Game_Engine
         // Method to check if the tile is occupied
         public bool IsOccupied()
         {
-            return _tileValue != 0;
+            return _tileValue != null;
         }
 
         // Method to occupy the tile with a tile object
@@ -34,7 +34,7 @@ namespace Advanced_C__for_Games____Tilemapped_Game_Engine
         {
             if (!IsOccupied())
             {
-                _tileValue = 1; // Arbitrarily assigning 1 to represent an occupied tile
+                _tileValue = "@"; // Arbitrarily assigning 1 to represent an occupied tile
                 return true;
             }
             else
@@ -46,7 +46,7 @@ namespace Advanced_C__for_Games____Tilemapped_Game_Engine
         // Method to vacate the tile
         public void VacateTile()
         {
-            _tileValue = 0; // Resetting the tile value to represent an unoccupied tile
+            _tileValue = "  "; // Resetting the tile value to represent an unoccupied tile
         }
     }
 }

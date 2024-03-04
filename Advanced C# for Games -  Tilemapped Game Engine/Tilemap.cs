@@ -8,7 +8,7 @@ namespace Advanced_C__for_Games____Tilemapped_Game_Engine
 {
     internal class Tilemap
     {
-        private int[,] _tiles;
+        private string[,] _tiles;
         private int _width;
         private int _height;
 
@@ -16,10 +16,10 @@ namespace Advanced_C__for_Games____Tilemapped_Game_Engine
         {
             _width = width;
             _height = height;
-            _tiles = new int[height, width]; 
+            _tiles = new string[height, width]; 
         }
 
-        public int GetTile(int x, int y)
+        public string GetTile(int x, int y)
         {
             if (IsValidPosition(x, y))
             {
@@ -28,11 +28,11 @@ namespace Advanced_C__for_Games____Tilemapped_Game_Engine
             else
             {
                 
-                return -1; 
+                return "@"; 
             }
         }
 
-        public void SetTile(int x, int y, int tileValue)
+        public void SetTile(int x, int y, string tileValue)
         {
             if (IsValidPosition(x, y))
             {
@@ -60,14 +60,7 @@ namespace Advanced_C__for_Games____Tilemapped_Game_Engine
                     }
                     else if(row != 0 || col != 0)
                     {
-                        if (_tiles[row, col] == 0)
-                        {
-                            Console.Write("  ");
-                        }
-                        else
-                        {
-                            Console.Write(_tiles[row, col] + " ");
-                        }
+                        Console.Write(_tiles[row, col] + "  ");
                     }
                 }
                 Console.WriteLine();
