@@ -13,8 +13,6 @@ namespace Advanced_C__for_Games____Tilemapped_Game_Engine
         private int _width;
         private int _height;
 
-        private bool _color;
-
         public Tilemap(int width, int height)
         {
             _width = width;
@@ -82,6 +80,7 @@ namespace Advanced_C__for_Games____Tilemapped_Game_Engine
         {
             Console.BackgroundColor = color;
         }
+
         private void ChessCheckersMapColor(string tile, int col, int row )
         {
             if ((col + row) % 2 != 0)
