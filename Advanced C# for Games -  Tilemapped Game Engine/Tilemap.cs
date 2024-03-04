@@ -52,19 +52,22 @@ namespace Advanced_C__for_Games____Tilemapped_Game_Engine
                 {
                     if((row == 0 && (col != 0 && col != (_width - 1))) || (row == (_height - 1) && (col != 0 && col != (_width - 1))))
                     {
-                        Console.Write("-"); 
+                        Console.Write("██"); //Row
                     }
-                    if (col == 0 || col == (_width - 1))
+                    else if (col == 0 || col == (_width - 1)) // Colum
                     {
-                        Console.Write("|");
+                        Console.Write("██");
                     }
-                    if (_tiles[row, col] == 0)
+                    else if(row != 0 || col != 0)
                     {
-                        Console.Write("  ");
-                    }
-                    else
-                    {
-                        Console.Write(_tiles[row, col] + " ");
+                        if (_tiles[row, col] == 0)
+                        {
+                            Console.Write("  ");
+                        }
+                        else
+                        {
+                            Console.Write(_tiles[row, col] + " ");
+                        }
                     }
                 }
                 Console.WriteLine();

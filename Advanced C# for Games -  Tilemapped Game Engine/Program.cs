@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Tilemap tilemap = new Tilemap(5, 5);
+            Tilemap tilemap = new Tilemap(10, 10);
 
             tilemap.PrintTilemap();
         }
