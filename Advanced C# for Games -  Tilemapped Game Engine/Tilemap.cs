@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,11 +13,13 @@ namespace Advanced_C__for_Games____Tilemapped_Game_Engine
         private int _width;
         private int _height;
 
+        private bool _color;
+
         public Tilemap(int width, int height)
         {
             _width = width;
             _height = height;
-            _tiles = new string[height, width]; 
+            _tiles = new string[height, width];
         }
 
         public string GetTile(int x, int y)
@@ -27,8 +30,8 @@ namespace Advanced_C__for_Games____Tilemapped_Game_Engine
             }
             else
             {
-                
-                return "@"; 
+
+                return "@";
             }
         }
 
@@ -40,7 +43,7 @@ namespace Advanced_C__for_Games____Tilemapped_Game_Engine
             }
             else
             {
-                
+
             }
         }
 
@@ -50,7 +53,8 @@ namespace Advanced_C__for_Games____Tilemapped_Game_Engine
             {
                 for (int col = 0; col < _width; col++)
                 {
-                    if((row == 0 && (col != 0 && col != (_width - 1))) || (row == (_height - 1) && (col != 0 && col != (_width - 1))))
+                    ChessCheckersMapColor(_tiles[col,row], col, row);
+                    if ((row == 0 && (col != 0 && col != (_width - 1))) || (row == (_height - 1) && (col != 0 && col != (_width - 1))))
                     {
                         Console.Write("██"); //Row
                     }
@@ -58,20 +62,37 @@ namespace Advanced_C__for_Games____Tilemapped_Game_Engine
                     {
                         Console.Write("██");
                     }
-                    else if(row != 0 || col != 0)
+                    else if (row != 0 || col != 0)
                     {
                         Console.Write(_tiles[row, col] + "  ");
                     }
                 }
                 Console.WriteLine();
             }
-        }
 
+        }
         private bool IsValidPosition(int x, int y)
         {
             return x >= 0 && x < _width && y >= 0 && y < _height;
         }
+
+
+        // should all be moved to a color class
+        private void ColorTile(ConsoleColor color, int col, int row)
+        {
+            Console.BackgroundColor = color;
+        }
+        private void ChessCheckersMapColor(string tile, int col, int row )
+        {
+            if ((col + row) % 2 != 0)
+            {
+            
+                ColorTile(ConsoleColor.White, col, row);
+            }
+            else
+            {
+                ColorTile(ConsoleColor.Black, col, row);
+            }
+        }
     }
-
 }
-

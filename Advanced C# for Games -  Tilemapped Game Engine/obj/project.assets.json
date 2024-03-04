@@ -8,24 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\samis\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\ratch\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\samis\\OneDrive\\Desktop\\Advanced-C-Sharp-for-Games\\Advanced C# for Games -  Tilemapped Game Engine\\Advanced C# for Games -  Tilemapped Game Engine.csproj",
+      "projectUniqueName": "C:\\Users\\ratch\\OneDrive\\Desktop\\C# OOP Project git\\Advanced-C-Sharp-for-Games\\Advanced C# for Games -  Tilemapped Game Engine\\Advanced C# for Games -  Tilemapped Game Engine.csproj",
       "projectName": "Advanced C# for Games -  Tilemapped Game Engine",
-      "projectPath": "C:\\Users\\samis\\OneDrive\\Desktop\\Advanced-C-Sharp-for-Games\\Advanced C# for Games -  Tilemapped Game Engine\\Advanced C# for Games -  Tilemapped Game Engine.csproj",
-      "packagesPath": "C:\\Users\\samis\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\samis\\OneDrive\\Desktop\\Advanced-C-Sharp-for-Games\\Advanced C# for Games -  Tilemapped Game Engine\\obj\\",
+      "projectPath": "C:\\Users\\ratch\\OneDrive\\Desktop\\C# OOP Project git\\Advanced-C-Sharp-for-Games\\Advanced C# for Games -  Tilemapped Game Engine\\Advanced C# for Games -  Tilemapped Game Engine.csproj",
+      "packagesPath": "C:\\Users\\ratch\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ratch\\OneDrive\\Desktop\\C# OOP Project git\\Advanced-C-Sharp-for-Games\\Advanced C# for Games -  Tilemapped Game Engine\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\samis\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\ratch\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -33,7 +28,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
