@@ -6,7 +6,6 @@
         {
             Tilemap tilemap = new Tilemap(10, 10);
 
-            tilemap.PrintTilemap();
-        }
+            tilemap.PrintTilemap();        }
     }
 }

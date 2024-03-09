@@ -6,21 +6,15 @@ using System.Threading.Tasks;
 
 namespace Advanced_C__for_Games____Tilemapped_Game_Engine
 {
-    internal class Tile
+    public class Tile
     {
-        private string _tileValue;
-
-        
+        private string _tileValue = "  ";  // get from tile object obtaining it, if emptey is 2 spaces
+        // tile class should know what position hes in
+        private string actor;
         public string TileValue
         {
             get { return _tileValue; }
             set { _tileValue = value; }
-        }
-
-        
-        public Tile(string initialValue)
-        {
-            _tileValue = initialValue;
         }
 
         // Method to check if the tile is occupied
@@ -34,7 +28,7 @@ namespace Advanced_C__for_Games____Tilemapped_Game_Engine
         {
             if (!IsOccupied())
             {
-                _tileValue = "@"; // Arbitrarily assigning 1 to represent an occupied tile
+                _tileValue = "  "; // Arbitrarily assigning 1 to represent an occupied tile
                 return true;
             }
             else
@@ -47,6 +41,11 @@ namespace Advanced_C__for_Games____Tilemapped_Game_Engine
         public void VacateTile()
         {
             _tileValue = "  "; // Resetting the tile value to represent an unoccupied tile
+        }
+
+        public Tile(string initialValue)
+        {
+            _tileValue = initialValue;
         }
     }
 }

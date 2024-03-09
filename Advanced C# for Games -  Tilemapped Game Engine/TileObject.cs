@@ -2,8 +2,8 @@
 {
     class TileObject
     {
-        private char _avatar;
-        private string _name;
+        private string _avatar;
+        private string _name; // rook, bishop
         private int[,] _tileLocation;
 
         public void MoveToTile(int[,] targetTile, int[,] currentTile)
@@ -17,16 +17,15 @@
             if (canMove) { _tileLocation = targetTile; }
             else return;
         }
-        public void CheckTile(int[,] targetTile)
-        {
-            if (/* check if targetTile has another object on it*/true )
 
-                    switch (/*types of _tiles*/ true)
-                {
-                    default: break;
-                }
+        public void Notify(Tile tile)
+        {
+            if (true /* passing thorugh tiles*/ )
+            { }
+            if (true /* lands on tiles  tiles*/ )
+            { }
         }
-        public TileObject(string name, char avatar, int[,] tileLocation)
+        public TileObject(string name, string avatar, int[,] tileLocation)
         {
             this._avatar = avatar;
             this._name = name;

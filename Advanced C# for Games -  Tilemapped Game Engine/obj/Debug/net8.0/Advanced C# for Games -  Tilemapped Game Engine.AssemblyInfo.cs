@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Advanced C# for Games -  Tilemapped Game Engine")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+41fe6ef04ebf7d1dafb52cedfdfcb7108f0a1617")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0c1b55f266f6f8b4b48306f31eb4111345f28c72")]
 [assembly: System.Reflection.AssemblyProductAttribute("Advanced C# for Games -  Tilemapped Game Engine")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Advanced C# for Games -  Tilemapped Game Engine")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

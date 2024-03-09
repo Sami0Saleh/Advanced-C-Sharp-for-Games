@@ -7,18 +7,15 @@ using System.Threading.Tasks;
 
 namespace Advanced_C__for_Games____Tilemapped_Game_Engine
 {
-    internal class Tilemap
+    public class Tilemap
     {
-        private string[,] _tiles;
+        private string[,] _tiles; // should be built by Tile Class Objects
         private int _width;
         private int _height;
 
-        public Tilemap(int width, int height)
-        {
-            _width = width;
-            _height = height;
-            _tiles = new string[height, width];
-        }
+
+        // need to create properties for all the private variables
+        
 
         public string GetTile(int x, int y)
         {
@@ -28,8 +25,7 @@ namespace Advanced_C__for_Games____Tilemapped_Game_Engine
             }
             else
             {
-
-                return "@";
+                return "@"; // need to return to user and let him enter new coordinates 
             }
         }
 
@@ -41,11 +37,11 @@ namespace Advanced_C__for_Games____Tilemapped_Game_Engine
             }
             else
             {
-
+                // what if a player tries to set in a unvalided position
             }
         }
 
-        public void PrintTilemap()
+        public void PrintTilemap() // need to become a set and put print into a visual class
         {
             for (int row = 0; row < _height; row++)
             {
@@ -75,6 +71,8 @@ namespace Advanced_C__for_Games____Tilemapped_Game_Engine
         }
 
 
+
+
         // should all be moved to a color class
         private void ColorTile(ConsoleColor color, int col, int row)
         {
@@ -92,6 +90,12 @@ namespace Advanced_C__for_Games____Tilemapped_Game_Engine
             {
                 ColorTile(ConsoleColor.Black, col, row);
             }
+        }
+        public Tilemap(int width, int height)
+        {
+            _width = width;
+            _height = height;
+            _tiles = new string[height, width];
         }
     }
 }
