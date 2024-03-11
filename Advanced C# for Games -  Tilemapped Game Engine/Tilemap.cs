@@ -50,15 +50,15 @@ namespace Advanced_C__for_Games____Tilemapped_Game_Engine
                     ChessCheckersMapColor(_tiles[col,row], col, row);
                     if ((row == 0 && (col != 0 && col != (_width - 1))) || (row == (_height - 1) && (col != 0 && col != (_width - 1))))
                     {
-                        Console.Write("██"); //Row
+                        Console.Write($"{col}{row}"); //Row
                     }
                     else if (col == 0 || col == (_width - 1)) // Colum
                     {
-                        Console.Write("██");
+                        Console.Write($"{col}{row}");
                     }
                     else if (row != 0 || col != 0)
                     {
-                        Console.Write(_tiles[row, col] + "  ");
+                        Console.Write(_tiles[row, col] + $"{col}{row}");
                     }
                 }
                 Console.WriteLine();
@@ -91,11 +91,18 @@ namespace Advanced_C__for_Games____Tilemapped_Game_Engine
                 ColorTile(ConsoleColor.Black, col, row);
             }
         }
+        private void SetNumNLetters()
+        {
+
+        }
+
         public Tilemap(int width, int height)
         {
             _width = width;
             _height = height;
             _tiles = new string[height, width];
         }
+
+        
     }
 }
