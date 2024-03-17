@@ -13,7 +13,21 @@ namespace Advanced_C__for_Games____Tilemapped_Game_Engine
         private int _width;
         private int _height;
 
-
+        public int Height
+        {
+            get { return _height; }
+            set { _height = value; }
+        }
+        public int Width
+        {
+            get { return _width; }
+            set { _width = value; }
+        }
+        public string[,] tiles
+        {
+            get { return _tiles; }
+            set { _tiles = value; }
+        }
         // need to create properties for all the private variables
         
 
@@ -47,14 +61,15 @@ namespace Advanced_C__for_Games____Tilemapped_Game_Engine
             {
                 for (int col = 0; col < _width; col++)
                 {
-                    ChessCheckersMapColor(_tiles[col,row], col, row);
                     if ((row == 0 && (col != 0 && col != (_width - 1))) || (row == (_height - 1) && (col != 0 && col != (_width - 1))))
                     {
-                        Console.Write($"{col}{row}"); //Row
+                        // ██
+                        Console.Write($"{col} "); //Row
                     }
                     else if (col == 0 || col == (_width - 1)) // Colum
                     {
-                        Console.Write($"{col}{row}");
+                        
+                        Console.Write($"{row} ");
                     }
                     else if (row != 0 || col != 0)
                     {
@@ -73,24 +88,9 @@ namespace Advanced_C__for_Games____Tilemapped_Game_Engine
 
 
 
-        // should all be moved to a color class
-        private void ColorTile(ConsoleColor color, int col, int row)
-        {
-            Console.BackgroundColor = color;
-        }
+       
 
-        private void ChessCheckersMapColor(string tile, int col, int row )
-        {
-            if ((col + row) % 2 != 0)
-            {
-            
-                ColorTile(ConsoleColor.White, col, row);
-            }
-            else
-            {
-                ColorTile(ConsoleColor.Black, col, row);
-            }
-        }
+      
         private void SetNumNLetters()
         {
 
