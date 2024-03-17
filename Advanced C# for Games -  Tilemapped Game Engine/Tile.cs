@@ -6,10 +6,13 @@ using System.Threading.Tasks;
 
 namespace Advanced_C__for_Games____Tilemapped_Game_Engine
 {
-    public class Tile
+    public class Tile: Tilemap
     {
+        
         private string _tileValue = "  ";  // get from tile object obtaining it, if emptey is 2 spaces
         // tile class should know what position hes in
+        private int _heightPos;
+        private int _widthPos;
         private string actor;
         public string TileValue
         {
@@ -43,8 +46,10 @@ namespace Advanced_C__for_Games____Tilemapped_Game_Engine
             _tileValue = "  "; // Resetting the tile value to represent an unoccupied tile
         }
 
-        public Tile(string initialValue)
+        public Tile(int width, int height, string initialValue) : base(width, height)
         {
+            _widthPos = width;
+            _heightPos = height;
             _tileValue = initialValue;
         }
     }

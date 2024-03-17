@@ -7,7 +7,7 @@
         private Tilemap _tileMap;
 
 
-        public void PrintTilemap() // need to become a set and put print into a visual class
+        public void PrintTilemap()
         {
             for (int row = 0; row < _height; row++)
             {
@@ -33,7 +33,7 @@
             }
 
         }
-        private void ChessCheckersMapColor(string tile, int col, int row)
+        private void ChessCheckersMapColor(Tile tile, int col, int row)
         {
             if ((col + row) % 2 != 0)
             {

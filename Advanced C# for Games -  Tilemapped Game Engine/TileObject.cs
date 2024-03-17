@@ -1,6 +1,6 @@
 ﻿namespace Advanced_C__for_Games____Tilemapped_Game_Engine
 {
-    class TileObject
+    class TileObject : Tile
     {
         private string _avatar;
         private string _name; // rook, bishop
@@ -25,11 +25,12 @@
             if (true /* lands on tiles  tiles*/ )
             { }
         }
-        public TileObject(string name, string avatar, int[,] tileLocation)
+        public TileObject(int width, int height, string initialValue, string name, string avatar, int[,] tileLocation) : base(width,height,initialValue)
         {
             this._avatar = avatar;
             this._name = name;
             this._tileLocation = tileLocation;
+            avatar = TileValue;
         }
     }
 }

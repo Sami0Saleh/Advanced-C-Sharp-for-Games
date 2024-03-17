@@ -9,21 +9,21 @@ namespace Advanced_C__for_Games____Tilemapped_Game_Engine
 {
     public class Tilemap
     {
-        private string[,] _tiles; // should be built by Tile Class Objects
-        private int _width;
-        private int _height;
+        private Tile[,] _tiles; 
+        private int _widthLimit;
+        private int _heightLimit;
 
         public int Height
         {
-            get { return _height; }
-            set { _height = value; }
+            get { return _heightLimit; }
+            set { _heightLimit = value; }
         }
         public int Width
         {
-            get { return _width; }
-            set { _width = value; }
+            get { return _widthLimit; }
+            set { _widthLimit = value; }
         }
-        public string[,] tiles
+        public Tile[,] tiles
         {
             get { return _tiles; }
             set { _tiles = value; }
@@ -31,7 +31,7 @@ namespace Advanced_C__for_Games____Tilemapped_Game_Engine
         // need to create properties for all the private variables
         
 
-        public string GetTile(int x, int y)
+        public Tile GetTile(int x, int y)
         {
             if (IsValidPosition(x, y))
             {
@@ -39,11 +39,11 @@ namespace Advanced_C__for_Games____Tilemapped_Game_Engine
             }
             else
             {
-                return "@"; // need to return to user and let him enter new coordinates 
+                return null; // need to return to user and let him enter new coordinates 
             }
         }
 
-        public void SetTile(int x, int y, string tileValue)
+        public void SetTile(int x, int y, Tile tileValue)
         {
             if (IsValidPosition(x, y))
             {
@@ -57,16 +57,16 @@ namespace Advanced_C__for_Games____Tilemapped_Game_Engine
 
         public void PrintTilemap() // need to become a set and put print into a visual class
         {
-            for (int row = 0; row < _height; row++)
+            for (int row = 0; row < _heightLimit; row++)
             {
-                for (int col = 0; col < _width; col++)
+                for (int col = 0; col < _widthLimit; col++)
                 {
-                    if ((row == 0 && (col != 0 && col != (_width - 1))) || (row == (_height - 1) && (col != 0 && col != (_width - 1))))
+                    if ((row == 0 && (col != 0 && col != (_widthLimit - 1))) || (row == (_heightLimit - 1) && (col != 0 && col != (_widthLimit - 1))))
                     {
                         // ██
                         Console.Write($"{col} "); //Row
                     }
-                    else if (col == 0 || col == (_width - 1)) // Colum
+                    else if (col == 0 || col == (_widthLimit - 1)) // Colum
                     {
                         
                         Console.Write($"{row} ");
@@ -82,15 +82,8 @@ namespace Advanced_C__for_Games____Tilemapped_Game_Engine
         }
         private bool IsValidPosition(int x, int y)
         {
-            return x >= 0 && x < _width && y >= 0 && y < _height;
+            return x >= 0 && x < _widthLimit && y >= 0 && y < _heightLimit;
         }
-
-
-
-
-       
-
-      
         private void SetNumNLetters()
         {
 
@@ -98,9 +91,9 @@ namespace Advanced_C__for_Games____Tilemapped_Game_Engine
 
         public Tilemap(int width, int height)
         {
-            _width = width;
-            _height = height;
-            _tiles = new string[height, width];
+            _widthLimit = width;
+            _heightLimit = height;
+            _tiles = new Tile[height, width];
         }
 
         
