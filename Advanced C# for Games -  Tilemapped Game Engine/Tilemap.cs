@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace Advanced_C__for_Games____Tilemapped_Game_Engine
 {
-    public class Tilemap
+    public abstract class Tilemap
     {
-        private string[,] _tiles; // should be built by Tile Class Objects
+        private Tile[,] _tiles; // should be built by Tile Class Objects
         private int _width;
         private int _height;
         private List<TileObject> _actors;
@@ -19,7 +19,7 @@ namespace Advanced_C__for_Games____Tilemapped_Game_Engine
 
         public int Width => _width;
         public int Height => _height;
-        public List<TileObject> Actors => _actors;
+      // public List<TileObject> Actors => _actors;
         public int CurrentTurn => _currentTurn;
 
 

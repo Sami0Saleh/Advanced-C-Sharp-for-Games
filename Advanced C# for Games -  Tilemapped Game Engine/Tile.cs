@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace Advanced_C__for_Games____Tilemapped_Game_Engine
 {
-    public class Tile
+    public abstract class Tile
     {
+        private TileObject _tileObject = null;
         private string _tileValue = "  ";  // get from tile object obtaining it, if emptey is 2 spaces
         // tile class should know what position hes in
         private string actor;

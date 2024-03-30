@@ -1,11 +1,11 @@
 ﻿namespace Advanced_C__for_Games____Tilemapped_Game_Engine
 {
-    class TileObject
+    public abstract class TileObject
     {
+        private Tile _tile;
         private string _avatar;
         private string _name; // rook, bishop
         private int[,] _tileLocation;
-
         public void MoveToTile(int[,] targetTile, int[,] currentTile)
         {
             bool canMove = false;
