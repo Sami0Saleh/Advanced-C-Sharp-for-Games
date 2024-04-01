@@ -1,7 +1,10 @@
 ﻿namespace Advanced_C__for_Games____Tilemapped_Game_Engine
 {
-    public abstract class TileObject
+    public abstract class TileObject : ICloneable
     {
+
+        private Actor _actor; // the actor the tileobject belongs to 
+
         private Tile _tile;
         private string _avatar;
         private string _name; // rook, bishop
@@ -31,5 +34,8 @@
             this._name = name;
             this._tileLocation = tileLocation;
         }
+
+        public abstract object Clone();
+
     }
 }

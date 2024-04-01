@@ -1,12 +1,18 @@
 ﻿namespace Advanced_C__for_Games____Tilemapped_Game_Engine
 {
+    // engine (start and update) 
+    // renderer 
+    // make existing classes (tilemap, tile, tileobject) abstract and inhertible 
     class Program
     {
         static void Main(string[] args)
         {
-            Tilemap tilemap = new Tilemap(10, 10);
+            UserMap usermap = new UserMap(10,10);
 
-            tilemap.PrintTilemap();        }
+
+        }
+
+
+
     }
-}
 }

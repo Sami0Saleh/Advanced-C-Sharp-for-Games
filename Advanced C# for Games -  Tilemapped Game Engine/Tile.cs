@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace Advanced_C__for_Games____Tilemapped_Game_Engine
 {
-    public abstract class Tile
+    public abstract class Tile : ICloneable
     {
+        private Actor _actor; // the actor the tile belongs to 
+
         private TileObject _tileObject = null;
         private string _tileValue = "  ";  // get from tile object obtaining it, if emptey is 2 spaces
         // tile class should know what position hes in
@@ -20,7 +22,7 @@ namespace Advanced_C__for_Games____Tilemapped_Game_Engine
 
         // Method to check if the tile is occupied
         public bool IsOccupied()
-        {
+        {          
             return _tileValue != null;
         }
 
@@ -41,12 +43,24 @@ namespace Advanced_C__for_Games____Tilemapped_Game_Engine
         // Method to vacate the tile
         public void VacateTile()
         {
+           
             _tileValue = "  "; // Resetting the tile value to represent an unoccupied tile
         }
+        
+    
 
+        public void Notify(TileObject tileobject)
+        {
+            if (true /* passing thorugh tiles*/ )
+            { }
+            if (true /* lands on tiles  tiles*/ )
+            { }
+        }
         public Tile(string initialValue)
         {
             _tileValue = initialValue;
         }
+
+        public abstract object Clone();
     }
 }
