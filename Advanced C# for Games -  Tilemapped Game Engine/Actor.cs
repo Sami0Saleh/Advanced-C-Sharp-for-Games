@@ -7,7 +7,10 @@ using System.Threading.Tasks;
 
 namespace Advanced_C__for_Games____Tilemapped_Game_Engine
 {
-    public class Actor
+    /// <summary>
+    /// A class for the Player and the AI, each instance will receive a turn in game
+    /// </summary>
+    public class Actor 
     {
 
 

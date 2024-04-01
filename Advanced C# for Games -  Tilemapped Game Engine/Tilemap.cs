@@ -6,10 +6,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Collections.Generic;
 using System.Collections;
+using System.Diagnostics.CodeAnalysis;
 
 namespace Advanced_C__for_Games____Tilemapped_Game_Engine
 {
-    public abstract class Tilemap : IEnumerable
+    public abstract class Tilemap : IEnumerable<Tile>
     {
         
         private Tile[,] _tiles;
@@ -150,9 +151,41 @@ namespace Advanced_C__for_Games____Tilemapped_Game_Engine
         ///  
         ///  
         /// 
-        public IEnumerator GetEnumerator()
+
+        public IEnumerator<Tile> GetEnumerator()
         {
             return null;
+        }
+
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return this.GetEnumerator();
+        }
+
+        /// 
+        ///  2D Position Interface 
+        /// 
+        public struct IPosition
+        {
+            // needs to override Must override ToString(), GetHashCode(), and Equals()
+         
+            public override string ToString()
+            {
+                return base.ToString();
+            }
+            public override int GetHashCode()
+            { 
+               return base.GetHashCode();
+            }
+            public override bool Equals([NotNullWhen(true)] object? obj)
+            {
+                return base.Equals(obj);
+            }
+
+            // Must override operators for addition and subtraction(+, -)
+
+
+
         }
     }
 }

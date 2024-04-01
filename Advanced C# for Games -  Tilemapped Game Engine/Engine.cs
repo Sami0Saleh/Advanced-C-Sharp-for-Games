@@ -16,16 +16,16 @@ public abstract class Engine // needs to support inhertience
 
     }
 
-    public void TurnHandler() //  handles the diffrent turns of the actors
-    {
-
-    }
+   
     public void StopGame() // stops the game
     {
 
 
     }
-   
+    public void TurnHandler(Actor player, Actor AI) //  handles the diffrent turns of the actors
+    {
+
+    }
     public Tile TileCreator() // used to create tiles
     {
         return null;
@@ -37,9 +37,9 @@ public abstract class Engine // needs to support inhertience
         return null;
     }
 
-    public void LoadTileMap() // used to load tile maps into memory
+    public void LoadTileMap(Tilemap tilemap) // used to load tile maps into memory
     {
-
+        _tileMap = tilemap;
     }
 
     public void PlaceTileObjects() // places tiles objects on tiles on the map
@@ -52,15 +52,14 @@ public abstract class Engine // needs to support inhertience
 
     }
 
-
-
-
-
     // Constructor 
     public Engine(Tilemap tilemap)
     {
         this._tileMap = tilemap;
     }
+   
+    
+ 
 
 
 }
