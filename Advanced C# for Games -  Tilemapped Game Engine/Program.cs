@@ -7,12 +7,7 @@
     {
         static void Main(string[] args)
         {
-            UserMap usermap = new UserMap(10,10);
-
-
+            UserMap usermap = new UserMap(10, 10);
         }
-
-
-
     }
 }
