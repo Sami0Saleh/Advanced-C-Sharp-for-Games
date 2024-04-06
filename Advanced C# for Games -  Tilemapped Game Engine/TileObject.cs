@@ -6,7 +6,8 @@
         private Actor _actor; // the actor the tileobject belongs to 
 
         private Tile _tile;
-        private string _avatar;
+        public char _avatar;
+        public ConsoleColor color;
         private string _name; // rook, bishop
         private int[,] _tileLocation;
         public void MoveToTile(int[,] targetTile, int[,] currentTile)
@@ -28,7 +29,7 @@
             if (true /* lands on tiles  tiles*/ )
             { }
         }
-        public TileObject(string name, string avatar, int[,] tileLocation)
+        public TileObject(string name, char avatar, int[,] tileLocation)
         {
             this._avatar = avatar;
             this._name = name;

@@ -13,7 +13,7 @@ namespace Advanced_C__for_Games____Tilemapped_Game_Engine
     public abstract class Tilemap : IEnumerable<Tile>
     {
         
-        private Tile[,] _tiles;
+        public Tile[,] _tiles;
         private int _mapWidth;
         private int _mapHeight;
 

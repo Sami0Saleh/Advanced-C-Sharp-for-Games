@@ -6,8 +6,18 @@ using System.Threading.Tasks;
 
 namespace Advanced_C__for_Games____Tilemapped_Game_Engine
 {
+
+ //   tile.Left, tile.Center, tile.Right, tile.ForegroundColor, tile.BackgroundColor
     public abstract class Tile : ICloneable
     {
+        public ConsoleColor _backgroundColor;
+        public ConsoleColor _foregroundColor;
+        public char Left;
+        public char Center;
+        public char Right;
+
+
+
         private Actor _actor; // the actor the tile belongs to 
 
         private TileObject _tileObject = null;
