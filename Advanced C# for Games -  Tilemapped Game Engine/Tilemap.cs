@@ -4,42 +4,40 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Collections.Generic;
+using System.Collections;
+using System.Diagnostics.CodeAnalysis;
 
 namespace Advanced_C__for_Games____Tilemapped_Game_Engine
 {
-    public abstract class Tilemap
+    public abstract class Tilemap : IEnumerable<Tile>
     {
-        private Tile[,] _tiles; // should be built by Tile Class Objects
-        private int _width;
-        private int _height;
-        private List<TileObject> _actors;
-        private int _currentTurn;
+        
+        private Tile[,] _tiles;
+        private int _mapWidth;
+        private int _mapHeight;
 
         // need to create properties for all the private variables
 
-        public int Width => _width;
-        public int Height => _height;
-      // public List<TileObject> Actors => _actors;
-        public int CurrentTurn => _currentTurn;
+        public int Width => _mapWidth;
+        public int Height => _mapHeight;
 
 
         public Tilemap(int width, int height)
         {
-            _width = width;
-            _height = height;
+            _mapWidth = width;
+            _mapHeight = height;
             _tiles = new Tile[height, width];
             InitializeTiles();
-            _actors = new List<TileObject>();
-            _currentTurn = 0;
         }
 
         private void InitializeTiles()
         {
-            for (int row = 0; row < _height; row++)
+            for (int row = 0; row < _mapHeight; row++)
             {
-                for (int col = 0; col < _width; col++)
+                for (int col = 0; col < _mapWidth; col++)
                 {
-                    _tiles[row, col] = new Tile();
+                //    _tiles[row, col] = new Tile();
                 }
             }
         }
@@ -48,31 +46,32 @@ namespace Advanced_C__for_Games____Tilemapped_Game_Engine
         {
             if (IsValidPosition(x, y))
             {
-                _tiles[y, x].OccupyingObject = tileObject;
+              //  _tiles[y, x].OccupyingObject = tileObject;
                 tileObject.MoveToTile(new int[,] { { x, y } }, null);
             }
         }
 
         public void AddActor(TileObject actor)
         {
-            _actors.Add(actor);
+            // _actors.Add(actor);
             Random rand = new Random();
             int x, y;
-            do
+           /* do
             {
                 x = rand.Next(Width);
                 y = rand.Next(Height);
-            } while (_tiles[y, x].OccupyingObject != null);
-            SetTileObject(x, y, actor);
+            }
+            while (_tiles[y, x].OccupyingObject != null);
+            SetTileObject(x, y, actor);*/
         }
 
-        public void HandleTurnOrder()
+       /* public void HandleTurnOrder()
         {
             _currentTurn = (_currentTurn + 1) % _actors.Count;
             Console.WriteLine($"It's now {_actors[_currentTurn].Name}'s turn.");
-        }
+        }*/
 
-        public string GetTile(int x, int y)
+        public Tile GetTile(int x, int y)
         {
             if (IsValidPosition(x, y))
             {
@@ -80,11 +79,11 @@ namespace Advanced_C__for_Games____Tilemapped_Game_Engine
             }
             else
             {
-                return "@"; // need to return to user and let him enter new coordinates 
+                return null; // need to return to user and let him enter new coordinates 
             }
         }
 
-        public void SetTile(int x, int y, string tileValue)
+        public void SetTile(int x, int y, Tile tileValue)
         {
             if (IsValidPosition(x, y))
             {
@@ -98,16 +97,16 @@ namespace Advanced_C__for_Games____Tilemapped_Game_Engine
 
         public void PrintTilemap() // need to become a set and put print into a visual class
         {
-            for (int row = 0; row < _height; row++)
+            for (int row = 0; row < _mapHeight; row++)
             {
-                for (int col = 0; col < _width; col++)
+                for (int col = 0; col < _mapWidth; col++)
                 {
                     ChessCheckersMapColor(_tiles[col,row], col, row);
-                    if ((row == 0 && (col != 0 && col != (_width - 1))) || (row == (_height - 1) && (col != 0 && col != (_width - 1))))
+                    if ((row == 0 && (col != 0 && col != (_mapWidth - 1))) || (row == (_mapHeight - 1) && (col != 0 && col != (_mapWidth - 1))))
                     {
                         Console.Write("██"); //Row
                     }
-                    else if (col == 0 || col == (_width - 1)) // Colum
+                    else if (col == 0 || col == (_mapWidth - 1)) // Colum
                     {
                         Console.Write("██");
                     }
@@ -122,7 +121,7 @@ namespace Advanced_C__for_Games____Tilemapped_Game_Engine
         }
         private bool IsValidPosition(int x, int y)
         {
-            return x >= 0 && x < _width && y >= 0 && y < _height;
+            return x >= 0 && x < _mapWidth && y >= 0 && y < _mapHeight;
         }
 
 
@@ -134,11 +133,11 @@ namespace Advanced_C__for_Games____Tilemapped_Game_Engine
             Console.BackgroundColor = color;
         }
 
-        private void ChessCheckersMapColor(string tile, int col, int row )
+        private void ChessCheckersMapColor(Tile tile, int col, int row)
         {
             if ((col + row) % 2 != 0)
             {
-            
+
                 ColorTile(ConsoleColor.White, col, row);
             }
             else
@@ -146,11 +145,47 @@ namespace Advanced_C__for_Games____Tilemapped_Game_Engine
                 ColorTile(ConsoleColor.Black, col, row);
             }
         }
-        public Tilemap(int width, int height)
+
+
+        /// IEnumerble and IEnumrator
+        ///  
+        ///  
+        /// 
+
+        public IEnumerator<Tile> GetEnumerator()
         {
-            _width = width;
-            _height = height;
-            _tiles = new string[height, width];
+            return null;
+        }
+
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return this.GetEnumerator();
+        }
+
+        /// 
+        ///  2D Position Interface 
+        /// 
+        public struct IPosition
+        {
+            // needs to override Must override ToString(), GetHashCode(), and Equals()
+         
+            public override string ToString()
+            {
+                return base.ToString();
+            }
+            public override int GetHashCode()
+            { 
+               return base.GetHashCode();
+            }
+            public override bool Equals([NotNullWhen(true)] object? obj)
+            {
+                return base.Equals(obj);
+            }
+
+            // Must override operators for addition and subtraction(+, -)
+
+
+
         }
     }
 }
