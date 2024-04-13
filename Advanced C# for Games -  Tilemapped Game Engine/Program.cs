@@ -8,7 +8,14 @@
        
         static void Main(string[] args)
         {
-            UserMap usermap = new UserMap(10, 10);
+
+            UserMap userMap = new UserMap(10,10);
+            Commends commends = new Commends();
+            UserEngine userEngine = new UserEngine(userMap, commends);
+            Console.WriteLine(userEngine.engineStarted);
+            userEngine.StartGame();
+            Console.WriteLine(userEngine.engineStarted);
+            userEngine.StopGame();
         }
     }
 }
