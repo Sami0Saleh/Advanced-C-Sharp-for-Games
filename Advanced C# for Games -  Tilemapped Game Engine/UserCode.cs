@@ -12,11 +12,6 @@ class UserMap : Tilemap
 class UserEngine : Engine
 {
 
-
-
-
-
-
     public UserEngine(Tilemap tilemap, Commends commends) : base(tilemap, commends)
     {
 

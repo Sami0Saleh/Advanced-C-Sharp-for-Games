@@ -1,35 +1,51 @@
 ﻿using Advanced_C__for_Games____Tilemapped_Game_Engine;
-using System.Security.Cryptography.X509Certificates;
+using System.Diagnostics;
+using System.Threading;
 
 public abstract class Engine // needs to support inhertience 
 {
     private Tilemap _tileMap;
     private Commends commends;
 
-    public bool engineStarted = false;
+    public bool gameStarted = false;
     // private Renderer _renderer;
     public void StartGame() // Starts The Game 
     {
-        engineStarted = true;
+        gameStarted = true;
         Console.WriteLine("Engine Start");
         commends.CommendLine();
+        Update();
     }
 
     public void Update() // runs until game ends handles moving parts
     {
-        while (engineStarted)
+        int lastTime = 0;
+        var watch = Stopwatch.StartNew();
+        watch.Start();
+        while (gameStarted)
         {
 
-
-
+            lastTime = EngineTimer(watch, lastTime);
+            if (Console.KeyAvailable)
+            { 
+            ConsoleKeyInfo playerInput = Console.ReadKey(true);
+            switch (playerInput.Key)
+            {
+                case ConsoleKey.Escape: StopGame(); break;
+                case ConsoleKey.Tab: commends.CommendLine(); break;
+            }
+            }
+            
         }
     }
 
     public void StopGame() // stops the game
     {
-       
-            engineStarted = false;
-
+        if (gameStarted)
+        {
+            Console.WriteLine("Engine Stopped");
+            gameStarted = false;
+        }
     }
     public void TurnHandler(Actor player, Actor AI) //  handles the diffrent turns of the actors
     {
@@ -68,7 +84,16 @@ public abstract class Engine // needs to support inhertience
         this.commends = commends;
     }
    
-    
+    public int EngineTimer(Stopwatch watch, int lastTime)
+    {
+        
+        if (watch.Elapsed.Seconds != lastTime)
+        {
+            Console.WriteLine($"Run Time - {watch.Elapsed.Hours}:{watch.Elapsed.Minutes}:{watch.Elapsed.Seconds}");
+        }
+        lastTime = watch.Elapsed.Seconds;
+        return lastTime;
+    }
  
 
 
