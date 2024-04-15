@@ -39,7 +39,7 @@ namespace Advanced_C__for_Games____Tilemapped_Game_Engine
 
         public void Select()
         {
-
+            // ask user for coords 
         }
         public void Deselect()
         {
@@ -47,7 +47,7 @@ namespace Advanced_C__for_Games____Tilemapped_Game_Engine
         }
         public void Move()
         {
-
+            // moves 
         }
 
 

@@ -26,6 +26,10 @@ namespace Advanced_C__for_Games____Tilemapped_Game_Engine
             ResetColor();
         }
 
+        public void RenderTileMap(UserMap tileMap)
+        {
+
+        }
         public void ResetColor()
         {
             Console.BackgroundColor = ConsoleColor.Black;
