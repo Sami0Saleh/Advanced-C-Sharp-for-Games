@@ -33,9 +33,9 @@ public abstract class Engine // needs to support inhertience
             {
                 case ConsoleKey.Escape: StopGame(); break;
                 case ConsoleKey.Tab: commends.CommendLine(); break;
+                default: Console.WriteLine("Unknown Key"); break;
             }
             }
-            
         }
     }
 
@@ -53,6 +53,7 @@ public abstract class Engine // needs to support inhertience
     }
     public Tile TileCreator() // used to create tiles
     {
+        
         return null;
     }
 
@@ -80,7 +81,7 @@ public abstract class Engine // needs to support inhertience
     // Constructor 
     public Engine(Tilemap tilemap, Commends commends)
     {
-        this._tileMap = tilemap;
+        LoadTileMap(tilemap);
         this.commends = commends;
     }
    

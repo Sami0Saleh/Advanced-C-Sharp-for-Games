@@ -3,24 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\ratch\\OneDrive\\Desktop\\C# OOP Project git\\Advanced-C-Sharp-for-Games\\Advanced C# for Games -  Tilemapped Game Engine\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5073BBB3-B3D7-4945-BAE3-2E378DB75D2D}|Advanced C# for Games -  Tilemapped Game Engine.csproj|c:\\users\\ratch\\onedrive\\desktop\\c# oop project git\\advanced-c-sharp-for-games\\advanced c# for games -  tilemapped game engine\\engine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5073BBB3-B3D7-4945-BAE3-2E378DB75D2D}|Advanced C# for Games -  Tilemapped Game Engine.csproj|solutionrelative:engine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5073BBB3-B3D7-4945-BAE3-2E378DB75D2D}|Advanced C# for Games -  Tilemapped Game Engine.csproj|c:\\users\\ratch\\onedrive\\desktop\\c# oop project git\\advanced-c-sharp-for-games\\advanced c# for games -  tilemapped game engine\\tilemap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5073BBB3-B3D7-4945-BAE3-2E378DB75D2D}|Advanced C# for Games -  Tilemapped Game Engine.csproj|solutionrelative:tilemap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5073BBB3-B3D7-4945-BAE3-2E378DB75D2D}|Advanced C# for Games -  Tilemapped Game Engine.csproj|c:\\users\\ratch\\onedrive\\desktop\\c# oop project git\\advanced-c-sharp-for-games\\advanced c# for games -  tilemapped game engine\\tile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5073BBB3-B3D7-4945-BAE3-2E378DB75D2D}|Advanced C# for Games -  Tilemapped Game Engine.csproj|solutionrelative:tile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5073BBB3-B3D7-4945-BAE3-2E378DB75D2D}|Advanced C# for Games -  Tilemapped Game Engine.csproj|c:\\users\\ratch\\onedrive\\desktop\\c# oop project git\\advanced-c-sharp-for-games\\advanced c# for games -  tilemapped game engine\\tileobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5073BBB3-B3D7-4945-BAE3-2E378DB75D2D}|Advanced C# for Games -  Tilemapped Game Engine.csproj|solutionrelative:tileobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5073BBB3-B3D7-4945-BAE3-2E378DB75D2D}|Advanced C# for Games -  Tilemapped Game Engine.csproj|c:\\users\\ratch\\onedrive\\desktop\\c# oop project git\\advanced-c-sharp-for-games\\advanced c# for games -  tilemapped game engine\\irenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5073BBB3-B3D7-4945-BAE3-2E378DB75D2D}|Advanced C# for Games -  Tilemapped Game Engine.csproj|solutionrelative:irenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5073BBB3-B3D7-4945-BAE3-2E378DB75D2D}|Advanced C# for Games -  Tilemapped Game Engine.csproj|c:\\users\\ratch\\onedrive\\desktop\\c# oop project git\\advanced-c-sharp-for-games\\advanced c# for games -  tilemapped game engine\\actor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5073BBB3-B3D7-4945-BAE3-2E378DB75D2D}|Advanced C# for Games -  Tilemapped Game Engine.csproj|solutionrelative:actor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5073BBB3-B3D7-4945-BAE3-2E378DB75D2D}|Advanced C# for Games -  Tilemapped Game Engine.csproj|c:\\users\\ratch\\onedrive\\desktop\\c# oop project git\\advanced-c-sharp-for-games\\advanced c# for games -  tilemapped game engine\\consolerenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -31,12 +15,24 @@
       "RelativeMoniker": "D:0:0:{5073BBB3-B3D7-4945-BAE3-2E378DB75D2D}|Advanced C# for Games -  Tilemapped Game Engine.csproj|solutionrelative:tilemaprenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5073BBB3-B3D7-4945-BAE3-2E378DB75D2D}|Advanced C# for Games -  Tilemapped Game Engine.csproj|c:\\users\\ratch\\onedrive\\desktop\\c# oop project git\\advanced-c-sharp-for-games\\advanced c# for games -  tilemapped game engine\\actor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5073BBB3-B3D7-4945-BAE3-2E378DB75D2D}|Advanced C# for Games -  Tilemapped Game Engine.csproj|solutionrelative:actor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5073BBB3-B3D7-4945-BAE3-2E378DB75D2D}|Advanced C# for Games -  Tilemapped Game Engine.csproj|c:\\users\\ratch\\onedrive\\desktop\\c# oop project git\\advanced-c-sharp-for-games\\advanced c# for games -  tilemapped game engine\\irenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5073BBB3-B3D7-4945-BAE3-2E378DB75D2D}|Advanced C# for Games -  Tilemapped Game Engine.csproj|solutionrelative:irenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5073BBB3-B3D7-4945-BAE3-2E378DB75D2D}|Advanced C# for Games -  Tilemapped Game Engine.csproj|c:\\users\\ratch\\onedrive\\desktop\\c# oop project git\\advanced-c-sharp-for-games\\advanced c# for games -  tilemapped game engine\\commends.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5073BBB3-B3D7-4945-BAE3-2E378DB75D2D}|Advanced C# for Games -  Tilemapped Game Engine.csproj|solutionrelative:commends.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5073BBB3-B3D7-4945-BAE3-2E378DB75D2D}|Advanced C# for Games -  Tilemapped Game Engine.csproj|c:\\users\\ratch\\onedrive\\desktop\\c# oop project git\\advanced-c-sharp-for-games\\advanced c# for games -  tilemapped game engine\\tileobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5073BBB3-B3D7-4945-BAE3-2E378DB75D2D}|Advanced C# for Games -  Tilemapped Game Engine.csproj|solutionrelative:tileobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5073BBB3-B3D7-4945-BAE3-2E378DB75D2D}|Advanced C# for Games -  Tilemapped Game Engine.csproj|c:\\users\\ratch\\onedrive\\desktop\\c# oop project git\\advanced-c-sharp-for-games\\advanced c# for games -  tilemapped game engine\\tile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5073BBB3-B3D7-4945-BAE3-2E378DB75D2D}|Advanced C# for Games -  Tilemapped Game Engine.csproj|solutionrelative:tile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5073BBB3-B3D7-4945-BAE3-2E378DB75D2D}|Advanced C# for Games -  Tilemapped Game Engine.csproj|c:\\users\\ratch\\onedrive\\desktop\\c# oop project git\\advanced-c-sharp-for-games\\advanced c# for games -  tilemapped game engine\\tilemap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5073BBB3-B3D7-4945-BAE3-2E378DB75D2D}|Advanced C# for Games -  Tilemapped Game Engine.csproj|solutionrelative:tilemap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5073BBB3-B3D7-4945-BAE3-2E378DB75D2D}|Advanced C# for Games -  Tilemapped Game Engine.csproj|c:\\users\\ratch\\onedrive\\desktop\\c# oop project git\\advanced-c-sharp-for-games\\advanced c# for games -  tilemapped game engine\\engine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5073BBB3-B3D7-4945-BAE3-2E378DB75D2D}|Advanced C# for Games -  Tilemapped Game Engine.csproj|solutionrelative:engine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5073BBB3-B3D7-4945-BAE3-2E378DB75D2D}|Advanced C# for Games -  Tilemapped Game Engine.csproj|c:\\users\\ratch\\onedrive\\desktop\\c# oop project git\\advanced-c-sharp-for-games\\advanced c# for games -  tilemapped game engine\\usercode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -45,6 +41,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{5073BBB3-B3D7-4945-BAE3-2E378DB75D2D}|Advanced C# for Games -  Tilemapped Game Engine.csproj|c:\\users\\ratch\\onedrive\\desktop\\c# oop project git\\advanced-c-sharp-for-games\\advanced c# for games -  tilemapped game engine\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5073BBB3-B3D7-4945-BAE3-2E378DB75D2D}|Advanced C# for Games -  Tilemapped Game Engine.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5073BBB3-B3D7-4945-BAE3-2E378DB75D2D}|Advanced C# for Games -  Tilemapped Game Engine.csproj|c:\\users\\ratch\\onedrive\\desktop\\c# oop project git\\advanced-c-sharp-for-games\\advanced c# for games -  tilemapped game engine\\commends.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5073BBB3-B3D7-4945-BAE3-2E378DB75D2D}|Advanced C# for Games -  Tilemapped Game Engine.csproj|solutionrelative:commends.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,7 +54,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Bookmark",
@@ -62,98 +62,98 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 8,
               "Title": "UserCode.cs",
               "DocumentMoniker": "C:\\Users\\ratch\\OneDrive\\Desktop\\C# OOP Project git\\Advanced-C-Sharp-for-Games\\Advanced C# for Games -  Tilemapped Game Engine\\UserCode.cs",
               "RelativeDocumentMoniker": "UserCode.cs",
               "ToolTip": "C:\\Users\\ratch\\OneDrive\\Desktop\\C# OOP Project git\\Advanced-C-Sharp-for-Games\\Advanced C# for Games -  Tilemapped Game Engine\\UserCode.cs",
               "RelativeToolTip": "UserCode.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-13T07:35:37.688Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "Commends.cs",
               "DocumentMoniker": "C:\\Users\\ratch\\OneDrive\\Desktop\\C# OOP Project git\\Advanced-C-Sharp-for-Games\\Advanced C# for Games -  Tilemapped Game Engine\\Commends.cs",
               "RelativeDocumentMoniker": "Commends.cs",
               "ToolTip": "C:\\Users\\ratch\\OneDrive\\Desktop\\C# OOP Project git\\Advanced-C-Sharp-for-Games\\Advanced C# for Games -  Tilemapped Game Engine\\Commends.cs",
               "RelativeToolTip": "Commends.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACsAAAAHAAAA",
+              "ViewState": "AQIAACcAAAAAAAAAAADwv0MAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-13T07:52:30.158Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 9,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\ratch\\OneDrive\\Desktop\\C# OOP Project git\\Advanced-C-Sharp-for-Games\\Advanced C# for Games -  Tilemapped Game Engine\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\ratch\\OneDrive\\Desktop\\C# OOP Project git\\Advanced-C-Sharp-for-Games\\Advanced C# for Games -  Tilemapped Game Engine\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAiAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-18T12:22:39.642Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
               "Title": "Engine.cs",
               "DocumentMoniker": "C:\\Users\\ratch\\OneDrive\\Desktop\\C# OOP Project git\\Advanced-C-Sharp-for-Games\\Advanced C# for Games -  Tilemapped Game Engine\\Engine.cs",
               "RelativeDocumentMoniker": "Engine.cs",
               "ToolTip": "C:\\Users\\ratch\\OneDrive\\Desktop\\C# OOP Project git\\Advanced-C-Sharp-for-Games\\Advanced C# for Games -  Tilemapped Game Engine\\Engine.cs",
               "RelativeToolTip": "Engine.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAAwCIAAABDAAAA",
+              "ViewState": "AQIAAFEAAAAAAAAAAAAIwFQAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-30T16:54:25.419Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "Tilemap.cs",
               "DocumentMoniker": "C:\\Users\\ratch\\OneDrive\\Desktop\\C# OOP Project git\\Advanced-C-Sharp-for-Games\\Advanced C# for Games -  Tilemapped Game Engine\\Tilemap.cs",
               "RelativeDocumentMoniker": "Tilemap.cs",
               "ToolTip": "C:\\Users\\ratch\\OneDrive\\Desktop\\C# OOP Project git\\Advanced-C-Sharp-for-Games\\Advanced C# for Games -  Tilemapped Game Engine\\Tilemap.cs",
               "RelativeToolTip": "Tilemap.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAdAAAA",
+              "ViewState": "AQIAAF4AAAAAAAAAAADwvw8AAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-02T10:45:23.403Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Tile.cs",
               "DocumentMoniker": "C:\\Users\\ratch\\OneDrive\\Desktop\\C# OOP Project git\\Advanced-C-Sharp-for-Games\\Advanced C# for Games -  Tilemapped Game Engine\\Tile.cs",
               "RelativeDocumentMoniker": "Tile.cs",
               "ToolTip": "C:\\Users\\ratch\\OneDrive\\Desktop\\C# OOP Project git\\Advanced-C-Sharp-for-Games\\Advanced C# for Games -  Tilemapped Game Engine\\Tile.cs",
               "RelativeToolTip": "Tile.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAYAAAA",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAowA4AAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-03T07:27:59.167Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "TileObject.cs",
               "DocumentMoniker": "C:\\Users\\ratch\\OneDrive\\Desktop\\C# OOP Project git\\Advanced-C-Sharp-for-Games\\Advanced C# for Games -  Tilemapped Game Engine\\TileObject.cs",
               "RelativeDocumentMoniker": "TileObject.cs",
               "ToolTip": "C:\\Users\\ratch\\OneDrive\\Desktop\\C# OOP Project git\\Advanced-C-Sharp-for-Games\\Advanced C# for Games -  Tilemapped Game Engine\\TileObject.cs",
               "RelativeToolTip": "TileObject.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAATAAAA",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAwAIAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-02T10:45:23.362Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "IRenderer.cs",
               "DocumentMoniker": "C:\\Users\\ratch\\OneDrive\\Desktop\\C# OOP Project git\\Advanced-C-Sharp-for-Games\\Advanced C# for Games -  Tilemapped Game Engine\\IRenderer.cs",
               "RelativeDocumentMoniker": "IRenderer.cs",
@@ -166,7 +166,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "ConsoleRenderer.cs",
               "DocumentMoniker": "C:\\Users\\ratch\\OneDrive\\Desktop\\C# OOP Project git\\Advanced-C-Sharp-for-Games\\Advanced C# for Games -  Tilemapped Game Engine\\ConsoleRenderer.cs",
               "RelativeDocumentMoniker": "ConsoleRenderer.cs",
@@ -179,7 +179,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "TileMapRenderer.cs",
               "DocumentMoniker": "C:\\Users\\ratch\\OneDrive\\Desktop\\C# OOP Project git\\Advanced-C-Sharp-for-Games\\Advanced C# for Games -  Tilemapped Game Engine\\TileMapRenderer.cs",
               "RelativeDocumentMoniker": "TileMapRenderer.cs",
@@ -192,7 +192,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
               "Title": "Actor.cs",
               "DocumentMoniker": "C:\\Users\\ratch\\OneDrive\\Desktop\\C# OOP Project git\\Advanced-C-Sharp-for-Games\\Advanced C# for Games -  Tilemapped Game Engine\\Actor.cs",
               "RelativeDocumentMoniker": "Actor.cs",
