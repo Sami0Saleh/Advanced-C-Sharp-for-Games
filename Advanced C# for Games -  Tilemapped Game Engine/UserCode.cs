@@ -20,7 +20,7 @@ public void DefineTilemap() // need to become a set and put print into a visual 
                 //ChessCheckersMapColor(_tiles[col, row], col, row);
                 if ((row == 0 && (col != 0 && col != (_mapWidth - 1))) || (row == (_mapHeight - 1) && (col != 0 && col != (_mapWidth - 1))))
                 {
-                    _tile2DArr[col, row] = "AA";//Row"██"
+                    _tile2DArr[col, row] = "██";//Row"██"
                 }
                 else if (col == 0 || col == (_mapWidth - 1)) // Colum
                 {
@@ -47,7 +47,7 @@ public void DefineTilemap() // need to become a set and put print into a visual 
 class UserEngine : Engine
 {
 
-    public UserEngine(Tilemap tilemap, Commends commends) : base(tilemap, commends)
+    public UserEngine(Tilemap tilemap, Commends commends, TileMapRenderer tileMapRenderer, UserMap userMap) : base(tilemap, commends, tileMapRenderer, userMap)
     {
 
 

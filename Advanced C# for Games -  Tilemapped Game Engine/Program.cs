@@ -10,18 +10,22 @@
         static void Main(string[] args)
         {
            
-            TileMapRenderer tileMapRenderer = new TileMapRenderer();
-            UserMap userMap = new UserMap(10,10);
-            userMap.DefineTilemap();
+            TileMapRenderer tileMapRenderer = new TileMapRenderer(); // create renderer
+            UserMap userMap = new UserMap(10,10); // create user map
+            Commends commends = new Commends(tileMapRenderer);
+            UserEngine userEngine = new UserEngine(userMap, commends, tileMapRenderer, userMap);
+            userMap.DefineTilemap(); // define user mape
+            tileMapRenderer.RenderTileMap(userMap); // render the map
 
-            tileMapRenderer.RenderTileMap(userMap);
-            /*
-            Commends commends = new Commends();
-            UserEngine userEngine = new UserEngine(userMap, commends);
+
+            
+
+         
             Console.WriteLine(userEngine.gameStarted);
             userEngine.StartGame();
+            
             Console.WriteLine(userEngine.gameStarted);
-            userEngine.StopGame();*/
+       
 
         }
     }

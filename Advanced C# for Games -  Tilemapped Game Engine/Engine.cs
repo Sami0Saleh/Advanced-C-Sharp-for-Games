@@ -6,8 +6,11 @@ public abstract class Engine // needs to support inhertience
 {
     private Tilemap _tileMap;
     private Commends commends;
+    private TileMapRenderer _tileMapRenderer;
+    private UserMap _userMap;
 
     public bool gameStarted = false;
+    private bool hasCleared = false;
     // private Renderer _renderer;
     public void StartGame() // Starts The Game 
     {
@@ -24,7 +27,10 @@ public abstract class Engine // needs to support inhertience
         watch.Start();
         while (gameStarted)
         {
-
+            if (!hasCleared) 
+            {
+               Console.Clear(); _tileMapRenderer.RenderTileMap(_userMap); hasCleared = true;
+            }
             lastTime = EngineTimer(watch, lastTime);
             if (Console.KeyAvailable)
             { 
@@ -32,7 +38,7 @@ public abstract class Engine // needs to support inhertience
             switch (playerInput.Key)
             {
                 case ConsoleKey.Escape: StopGame(); break;
-                case ConsoleKey.Tab: commends.CommendLine(); break;
+                case ConsoleKey.Tab: commends.CommendLine(); hasCleared = false; break;
                 default: Console.WriteLine("Unknown Key"); break;
             }
             }
@@ -79,8 +85,10 @@ public abstract class Engine // needs to support inhertience
     }
 
     // Constructor 
-    public Engine(Tilemap tilemap, Commends commends)
+    public Engine(Tilemap tilemap, Commends commends, TileMapRenderer tileMapRenderer, UserMap userMap)
     {
+        _userMap = userMap;
+        _tileMapRenderer = tileMapRenderer;
         LoadTileMap(tilemap);
         this.commends = commends;
     }

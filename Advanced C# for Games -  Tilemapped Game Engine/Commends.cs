@@ -6,7 +6,7 @@ namespace Advanced_C__for_Games____Tilemapped_Game_Engine
     public class Commends
     {
         TileObject _selectedTO;
-        
+        TileMapRenderer _mapRenderer;
         public void CommendLine()
         {
             Console.WriteLine("Please Enter A Commend");
@@ -20,6 +20,8 @@ namespace Advanced_C__for_Games____Tilemapped_Game_Engine
                 case "/select": Select(); break;
                 case "/deselect": Deselect(); break;
                 case "/move": Move(); break;
+                case "/color": _mapRenderer.StartColoring(); break;
+                case "/stopColor": _mapRenderer.StopColoring(); break;
 
             }
 
@@ -56,9 +58,9 @@ namespace Advanced_C__for_Games____Tilemapped_Game_Engine
 
 
 
-        public Commends() 
+        public Commends(TileMapRenderer mapRenderer) 
         {
-        
+           _mapRenderer = mapRenderer;
         }
 
 
